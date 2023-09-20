@@ -1,0 +1,121 @@
+/* ---------------------------------------------- */
+/* 푸터                                            */
+/* ---------------------------------------------- */
+.footer-main {
+    width: 100%;
+    /* absolute 이게 왜 있지 */
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+}
+
+.footer-top-bar__area {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 40px;
+    background-color: var(--color-gray-200);
+}
+
+.footer-top-bar__lists {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1020px;
+    height: 100%;
+}
+
+.footer-top-bar__item {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-right: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: var(--color-gray-800);
+}
+
+.footer-top-bar__lists .divider {
+    color: var(--color-blue-800);
+}
+
+/* 푸터 미드 영역 */
+.footer-mid-bar__info {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0px 32px 0px;
+}
+
+.footer-mid-coupang-logo {
+    display: inline-block;
+    width: 176px;
+    height: 40px;
+    background-image: url("../../assets/logo/logo-mono.svg");
+    background-size: 100%;
+}
+
+.footer-mid-bar__info .group-part {
+    position: relative;
+    margin-left: 62px;
+}
+
+.footer-mid-bar__info .info-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    color: var(--color-gray-800);
+}
+
+.footer-mid-contact__item {
+    position: relative;
+}
+
+.footer-mid-contact__item.info-text.two-line span:first-child {
+    margin-right: 8px;
+    padding-right: 12px;
+    border-right: 1px solid var(--color-gray-800);
+}
+
+.footer .strong {
+    font-weight: 700;
+}
+
+.footer .strong-big {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+/* 푸터 바텀 영역 */
+.footer-bottom-bar__area {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    background-color: var(--color-gray-900);
+    color: var(--color-gray-200);
+}
+
+.footer-bottom-clause__group {
+    margin: 16px 0 16px 0;
+}
+
+.footer-bottom-clause__text {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 120%;
+    white-space: nowrap;
+}
+
+/* 푸터 sns */
+.footer-bottom-sns__group {
+    margin: 52px 0 16px 52px;
+}
+
+.icon-instagram {
+    border-radius: 50%;
+    background: linear-gradient(174.12deg, #285AEB 5.61%, #BC1888 22.32%, #CC2366 36.16%, #DC2743 51.91%, #E6683C 73.38%, #F09433 91.99%);
+}

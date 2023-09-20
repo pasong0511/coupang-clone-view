@@ -1,0 +1,337 @@
+/* ---------------------------------------------- */
+/* 메인 헤더                                      */
+/* ---------------------------------------------- */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 맨 위상단 탑 바 */
+.header-top-bar__area {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 32px;
+    background-color: var(--color-gray-100);
+}
+
+.header-top-bar__lists {
+    display: flex;
+    align-items: center;
+    width: 1020px;
+    height: 100%;
+}
+
+.header-top-bar__item {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-right: 8px;
+    cursor: pointer
+}
+
+.header-top-bar__item:nth-child(1) {
+    margin-left: auto;
+    order: 3;
+}
+
+.header-top-bar__item:nth-child(2) {
+    order: 4;
+}
+
+.header-top-bar__item:nth-child(3) {
+    order: 5;
+}
+
+.header-top-bar__item:nth-child(4) {
+    order: 1;
+}
+
+.header-top-bar__item:nth-child(5) {
+    order: 2;
+}
+
+/* 헤더의 메인 메뉴 */
+.header-main-menu__area {
+    display: flex;
+    box-sizing: border-box;
+    width: 1020px;
+    height: 115px;
+}
+
+/* .header-main-menu__area::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.5px;
+    left: 0;
+    top: 150px;
+    background-color: var(--color-gray-100);
+} */
+
+/* 카테고리 버튼 영역 */
+.category-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 110px;
+    height: 116px;
+    border: none;
+    background-image: url("../../assets/icon/hamburger.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+    background-position-x: 40px;
+    background-color: var(--color-blue-600);
+}
+
+.catogory-btn__text {
+    padding-bottom: 30px;
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--color-white);
+}
+
+.main-menu__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu__top-area {
+    display: flex;
+    margin-top: 24px;
+}
+
+.main-coupang-logo {
+    display: inline-block;
+    width: 176px;
+    height: 40px;
+    background-image: url("../../assets/logo/logo.svg");
+    background-size: 100%;
+    margin: 0 30px 0 40px;
+}
+
+.main-menu__top-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-search__area {
+    position: relative;
+    display: flex;
+    border: 2px solid var(--color-blue-600);
+}
+
+.search-select {
+    width: 135px;
+    height: 40px;
+    appearance: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-gray-700);
+    padding-left: 12px;
+    border: none;
+    outline: none;
+    border-right: 1px solid var(--color-gray-100);
+}
+
+.menu-search-select__area .ico-down {
+    position: absolute;
+    top: 16px;
+    left: 110px;
+    pointer-events: none;
+}
+
+.search-input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+}
+
+.search-input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-gray-700);
+}
+
+.btn-mic,
+.btn-search {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-white);
+}
+
+.btn-mic {
+    background-image: url("../../assets/icon/mic.svg");
+}
+
+.btn-search {
+    background-image: url("../../assets/icon/search.svg");
+}
+
+/* 마이메뉴 */
+.main-menu-mymenu__area {
+    display: flex;
+}
+
+.myCoupang-btn {
+    margin-left: 24px;
+}
+
+.mybtn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 58px;
+    width: 58px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-color: var(--color-white);
+}
+
+.myCoupang-btn {
+    background-image: url("../../assets/icon/my-coupang.svg");
+}
+
+.cart-btn {
+    background-image: url("../../assets/icon/cart.svg");
+}
+
+.mybtn-text {
+    position: absolute;
+    top: 70%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    margin-top: 4px;
+}
+
+.mybtn-count {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    top: 0.5px;
+    left: 34px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50%;
+    font: bold var(--base-size) Tahoma;
+    letter-spacing: -1px;
+    color: #fff;
+    background-color: var(--color-blue-600);
+}
+
+.myCoupang {
+    position: relative;
+}
+
+.myCoupang.is--active .link-list {
+    display: block;
+}
+
+.link-list {
+    display: none;
+    position: absolute;
+    width: 90px;
+    height: 137px;
+    top: 70px;
+    left: 8px;
+    border: 1px solid var(--color-gray-300);
+    background-color: #fff;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 14.4px;
+    padding: 24px 0 24px 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.link-list::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: -5px;
+    left: 48%;
+    background-color: #fff;
+    border-top: 1px solid var(--color-gray-300);
+    border-left: 1px solid var(--color-gray-300);
+    transform: rotate(45deg);
+}
+
+.link-item:not(:first-child) {
+    margin-top: 20px;
+}
+
+.link-item:hover {
+    text-decoration: underline;
+    color: var(--color-blue-600);
+}
+
+.menu-mymenu-mycart__group {
+    position: relative;
+}
+
+.cart.cart--empty .cart-item-list {
+    display: block;
+}
+
+.cart-item-list {
+    display: none;
+    position: absolute;
+    width: 290px;
+    height: 100px;
+    top: 70px;
+    left: -210px;
+    border: 1px solid var(--color-gray-300);
+    background-color: #fff;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 14.4px;
+    padding: 70% 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cart-item-list::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: -5px;
+    right: 16%;
+    background-color: #fff;
+    border-top: 1px solid var(--color-gray-300);
+    border-left: 1px solid var(--color-gray-300);
+    transform: rotate(45deg);
+}
+
+/* 로켓배송, 로켓프레시, 직구 등 있는 메뉴 bottom */
+.main-gnb-menu__lists {
+    display: flex;
+    justify-content: space-between;
+    width: 755px;
+    height: 26px;
+    margin: 8px 0 0 40px;
+}
+
+.gnb-menu__item {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+}
+
+/* 검색창 옆 선택영역  */
+.search-select option {
+    font-size: 12px;
+}

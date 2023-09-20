@@ -1,0 +1,129 @@
+/* ---------------------------------------------- */
+/* 오늘의 영역                                   */
+/* ---------------------------------------------- */
+
+
+/*오늘의 영역 컨텐츠*/
+.today-discover {
+    width: 100%;
+}
+
+.discover-main__article {
+    width: 1020px;
+    height: 1020px;
+    margin: 0 auto;
+}
+
+/*오늘의 발견 타이틀 헤더*/
+.discover-title__area {
+    display: flex;
+    align-items: center;
+    margin: 8px 8px 24px 8px;
+
+}
+
+.discover-title__title {
+    height: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 115%;
+    text-align: center;
+}
+
+.discover-title__area>.discover-title__bar,
+.discover-title__area>.discover-title__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.4px;
+    align-items: center;
+    color: var(--color-gray-600);
+}
+
+.discover-title__area>.discover-title__bar {
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+/*오늘의 발견 타이틀 헤더 끝*/
+
+/*오늘의 발견 배너 컨텐츠*/
+.discovery-content__area {
+    /* position: relative; */
+    width: 100%;
+}
+
+.discovery-content__item {
+    box-sizing: border-box;
+    float: left;
+    height: 310px;
+    border: 1px solid var(--color-gray-600);
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+    margin-bottom: 14px;
+}
+
+.discovery-content__item:focus,
+.discovery-content__item:hover {
+    border: 1px solid var(--color-blue-600);
+}
+
+.discovery-content__item+.left-margin {
+    margin-left: 14px;
+}
+
+.discovery-content__item-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*큰 사진 너비는 502px*/
+.big-item {
+    width: 502px;
+}
+
+/*작은 사진 너비는 244px*/
+.small-item {
+    width: 244px;
+}
+
+.big-item .item-img {
+    width: 446px;
+    height: 270px;
+}
+
+.small-item .item-img {
+    width: 200px;
+    height: 270px;
+}
+
+.buy__button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    background-color: #000;
+    opacity: 0.2;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.discovery-content__item:hover .buy__button,
+.discovery-content__item:focus .buy__button {
+    width: 112px;
+    opacity: 1;
+    background-color: var(--color-blue-600);
+}
+
+.discovery-content__item:hover .buy__button::before,
+.discovery-content__item:focus .buy__button::before {
+    content: "구매하기";
+    font-size: 14px;
+    color: #fff;
+}

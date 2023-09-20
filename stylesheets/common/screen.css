@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+}
+
+.contents-field {
+    position: relative;
+    margin: 0 auto;
+}
+
+.contents-field article {
+    margin-top: 40px;
+}

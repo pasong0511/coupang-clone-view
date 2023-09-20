@@ -1,0 +1,146 @@
+/* ---------------------------------------------- */
+/* 오늘의 쇼핑 제안                               */
+/* ---------------------------------------------- */
+
+.offer-main__article {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+/*오늘의 쇼핑제안 타이틀 헤더*/
+.today-offer .offer-title__area {
+    background-image: url("/assets/icon/shopping.svg");
+    background-repeat: no-repeat;
+    margin: 8px 8px 24px 8px;
+}
+
+/*오늘의 쇼핑제안 타이틀 헤더*/
+.trend-up .offer-title__area {
+    background-image: url("/assets/icon/trendingup.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin: 8px 8px 24px 8px;
+}
+
+.offer-title__title {
+    height: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 115%;
+    margin-left: 30px;
+}
+
+/*오늘의 쇼핑제안 타이틀 끝*/
+
+/*오늘의 쇼핑제안 컨텐츠*/
+.offer-content__area {
+    width: 100%;
+}
+
+.offer-content__lists {
+    display: flex;
+}
+
+.offer-content__item {
+    position: relative;
+    width: 200px;
+    height: 270px;
+}
+
+.offer-content__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-content__item-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.offer-content__item-img {
+    width: 160px;
+    height: 160px;
+    margin: 14px 0 12px 0;
+}
+
+.offer-content__item-info {
+    margin: 12px 14px 0;
+    width: 172px;
+}
+
+.offer-content__item-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.offer-content__item-info-delivery {
+    margin-top: 4px;
+}
+
+
+
+
+.delivery-free {
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--color-gray-700);
+}
+
+.offer-content__item-info-star {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.item-rating-star {
+    width: 68px;
+    height: 12px;
+    line-height: 120%;
+    margin-right: 4px;
+    background-image: url("../../assets/sprites/rating-stars.png");
+}
+
+.star-4-half {
+    background-position-y: 26px;
+}
+
+.star-4 {
+    background-position-y: 40px;
+}
+
+.star-5 {
+    background-position-y: 12px;
+}
+
+.item-review-count {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: var(--color-gray-700);
+}
+
+.sail-tag {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 53px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    border-bottom-right-radius: 4px;
+    color: var(--color-white);
+    background-color: var(--color-red-500);
+}
